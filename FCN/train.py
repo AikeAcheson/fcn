@@ -51,6 +51,4 @@ print(f'loss {metric[0] / metric[2]:.3f}, train acc '
 print(f'{metric[2] * num_epochs / timer.sum():.1f} examples/sec on '
       f'{str(devices)}')
 
-torch.save(net.state_dict(), 'fcn.pt')
-
 writer.close()
