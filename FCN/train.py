@@ -1,13 +1,8 @@
-import os
-import pandas as pd
 import torch
-import torchvision
 from torch.utils.tensorboard import SummaryWriter
 from Utils import data, train
-import numpy as np
 from torch import nn
-from Utils.model import bilinear_kernel
-from Utils.train import loss, updater, train_batch
+from Utils.train import loss, train_batch
 from model import get_FCN
 
 writer = SummaryWriter()
